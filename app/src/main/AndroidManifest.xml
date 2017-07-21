@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vikramkumaresan.v4">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Get_Cycle_Info"
+            android:theme="@style/DialogTheme" />
+
+        <service
+            android:name=".Check_for_Taker"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".Live_Cycles" />
+        <activity
+            android:name=".Get_Taker_Name"
+            android:theme="@style/DialogTheme" />
+        <activity android:name=".Pointer" />
+        <activity
+            android:name=".PhoneParallelizer"
+            android:theme="@style/DialogTheme" />
+        <activity android:name=".GiverPointer" />
+        <activity android:name=".Live" />
+        <activity android:name=".Loading"></activity>
+    </application>
+
+</manifest>
